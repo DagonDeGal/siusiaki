@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2d8h5k3l9m1n"]
+
+[ext_resource type="Script" path="res://scripts/Enemy.gd" id="1_1x2yh"]
+[ext_resource type="Texture2D" uid="uid://jjt8j4rw3m3x" path="res://assets/fish_blue_outline.png" id="2_1x2yh"]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_1x2yh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1x2yh")
+scale = Vector2(0.5, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -20.0
+offset_top = -30.0
+offset_right = 20.0
+offset_bottom = -25.0
+max_value = 100.0
+value = 100.0

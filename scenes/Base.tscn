@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2oowfp6u3y1q"]
+
+[ext_resource type="Script" path="res://scripts/Base.gd" id="1_1x2yh"]
+[ext_resource type="Texture2D" uid="uid://jjt8j4rw3m3x" path="res://assets/meteorBrown_big4.png" id="2_1x2yh"]
+
+[node name="Base" type="Area2D"]
+script = ExtResource("1_1x2yh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1x2yh")
+scale = Vector2(0.5, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
